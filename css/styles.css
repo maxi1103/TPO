@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/* Estilos Base */
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+/*Header*/
+.main-header{
+    width: 100%;   
+}
+.logo_container{
+    background-color: antiquewhite;
+}
+.main-header img{
+    width: 90px;
+    height: 100px;
+    display: inline;
+}
+.main-header__logo{
+    
+    display: inline;
+    font-size: 2.2em;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+.main-header .logo_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-header__contactInfo__phone{
+   
+    padding: 12px;
+    margin: 0 auto;
+}
+.main-header__contactInfo__location{
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    margin: 0 auto;
+}
+.main-header [class*="icon-"]:before{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+/* Menu */
+.main-nav{
+    width: 100%;
+    position: sticky;
+    z-index: 2000px;
+    padding: 6px;
+    top: 0;
+    background: white;
+}
+#check{
+    display: none;
+}
+.menu{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.85);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    left: -100%;
+    transition: all .5s;
+
+}
+#check:checked ~ .menu{
+    left: 0;
+}
+.menu_link{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu_link:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.icon-menu{
+    display: block;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.main-nav_logo img{
+    width: 55px;
+    height: 55px;
+    display: inline;
+}
+/* Banner*/
+.banner__img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.banner__aside{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.banner__title{
+    font-family: 'Pacifico';
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(136, 136, 39);
+}
+.banner__title2{
+    font-weight: 100;
+    color: gray;
+}
+.banner__btn{
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer */
+.main-footer{
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+.main-footer .column{
+    margin: 5px 0 5px 3px;
+}

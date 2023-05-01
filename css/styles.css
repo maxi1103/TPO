@@ -190,7 +190,60 @@ h1,h2,h3,h4,h5,h6 {
 .main-footer .column{
     margin: 5px 0 5px 3px;
 }
+/* Main */
+.group__title{
+    font-family: 'Pacifico',cursive;
+    font-weight: 100;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 15px;
+}
+.group{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+.offer .column{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.offer__img{
+    margin: auto;
+    max-width: 300px;
+    height: 250px;
+}
+.offer__title{
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+.offer__price{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(136, 136, 39);
+}
+/* Sobre Nosotros */
+.about .column:nth-child(1){
+	height: 400px;
+	background-image: url(../assets/about2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 
+	background-size: 160%;
+	background-position: -10px -100px;
+	border-right:  50px solid #fff;
+	border-top: 500px solid transparent;
+}
+.about .column:nth-child(2){
+    padding: 10px;
+}
+.column__title{
+    font-size: 1.3em;
+}
 /*Responsives */
 @media screen and (min-width:490px){
     .main-header img{
@@ -201,6 +254,11 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 1.6em;
         padding: 8px;
         
+    }
+    .banner__aside{
+        height: 500px;
+        display: flex;
+        justify-content: center;
     }
     .main-header .column--50{
         width: 49%;
@@ -224,6 +282,41 @@ h1,h2,h3,h4,h5,h6 {
     .main-footer .column--33:nth-child(2){
         word-break: break-all;
     }
+    .column--50--25{
+        width: 49%;
+    }
+    .offer__img{
+        width: 240px;
+        height: 230px;
+        object-fit: cover;
+    }
+    .offer__price{
+        font-size: 1.3em;
+    }
+    .offer__title{
+        font-size: 1.2em;
+    }
+    .offer .column{
+        border: 3px solid #ddd;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .column--50{
+        width: 50%;
+    }
+    .about .column:nth-child(1){
+        height: 400px;
+        background-size: 100%;
+        background-position: -80px -100px;
+    }
+    .about .container{
+        align-items: start;
+    }
+    .group{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
 }
 @media screen and (min-width:768px){
     .main-header{
@@ -231,11 +324,6 @@ h1,h2,h3,h4,h5,h6 {
     }
     .column--50{
         width: 50%;
-    }
-    .banner__aside{
-        height: 500px;
-        display: flex;
-        justify-content: center;
     }
     .banner__title{
         font-size: 2.5em;
@@ -279,6 +367,29 @@ h1,h2,h3,h4,h5,h6 {
     .main-nav_logo img{
         height: 60px;
         width: 70px;
+    }
+    .column--50--25{
+        width: 24.5%;
+    }
+    .group{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .offer__title{
+        font-size: 1em;
+    }
+    .offer__price{
+        font-size: 1.1em;
+    }
+    .group__title{
+        font-size: 2em;
+    }
+    .about .column:nth-child(1){
+        background-size: 70%;
+        background-position: -80px -100px;
+    }
+    .column__text{
+        line-height: 22px;
     }
    
 }

@@ -29,6 +29,9 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
 }
 /*Header*/
+.main-nav__logo{
+    display: none;
+}
 .main-header{
     width: 100%;   
 }
@@ -43,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 .main-header__logo{
     
     display: inline;
-    font-size: 2.2em;
+    font-size: 2em;
     padding: 12px;
     font-family: 'Pacifico', cursive;
     font-weight: 100;
@@ -83,8 +86,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .menu{
     position: absolute;
-    top: 75px;
-    left: 0;
+    top: 70px;
     width: 100%;
     background-color: rgba(0,0,0,.85);
     padding: 0;
@@ -169,6 +171,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: .8em;
+    
 }
 .copy{
     text-align: center;
@@ -186,4 +189,96 @@ h1,h2,h3,h4,h5,h6 {
 }
 .main-footer .column{
     margin: 5px 0 5px 3px;
+}
+
+/*Responsives */
+@media screen and (min-width:490px){
+    .main-header img{
+        width: 60px;
+        height: 70px;
+    }
+    .main-header__logo{
+        font-size: 1.6em;
+        padding: 8px;
+        
+    }
+    .main-header .column--50{
+        width: 49%;
+    }
+    .column--33{
+        width: 32%;
+    }
+    .main-header{
+        background-color: antiquewhite;
+    }
+    .main-header__contactInfo__location{
+        background: none;
+        color: black;
+    }
+    .main-header__contactInfo{
+        text-align: right;
+    }
+    .main-footer .container--flex{
+        align-items: flex-start;
+    }
+    .main-footer .column--33:nth-child(2){
+        word-break: break-all;
+    }
+}
+@media screen and (min-width:768px){
+    .main-header{
+        display: none;
+    }
+    .column--50{
+        width: 50%;
+    }
+    .banner__aside{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .banner__title{
+        font-size: 2.5em;
+    }
+    .main-nav .container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .main-nav label{
+        display: none;
+    }
+    .menu{
+        position: relative;
+        left: 0;
+        top: 0;
+        display: flex;
+        background: none;
+        height: auto;
+        width: auto;
+    }
+    .menu_link{
+        color: black;
+        font-weight: bold;
+    }
+    .menu_link:hover{
+        background: none;
+        border-bottom: 2px solid antiquewhite;
+    }
+    .main-nav_logo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main-nav__logo{
+        display: inline;
+        font-size: 1.6em;
+        padding: 12px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 100;
+    }
+    .main-nav_logo img{
+        height: 60px;
+        width: 70px;
+    }
+   
 }

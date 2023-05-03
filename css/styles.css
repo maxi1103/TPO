@@ -244,6 +244,89 @@ h1,h2,h3,h4,h5,h6 {
 .column__title{
     font-size: 1.3em;
 }
+/* Contacto */
+.form .input-group{
+    position: relative;
+    margin-bottom: 32px;
+}
+.form .input-group input[type="text"],
+.form .input-group input[type="email"],
+.form .input-group textarea {
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #222;
+    resize: none;
+}
+.form .input-group textarea{
+    height: 100px;
+}
+.form .input-group .label {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        margin-left: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        position: absolute;
+        top: 16px;
+        left: 0; 
+}
+.form .input-group input[type="text"]:focus + .label,
+.form .input-group input[type="email"]:focus + .label,
+.form .input-group textarea:focus + .label,
+.form .input-group input[type="text"]:valid + .label,
+.form .input-group input[type="email"]:valid + .label,  
+.form .input-group textarea:valid + .label{
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #B6B6B6; 
+}
+.form input[type="submit"] {
+    background: antiquewhite;
+    border-radius: 1px;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+}
+.formulario input[type="submit"]:hover {
+      background: #252932; 
+}
+.contact__info{
+	padding: 10px;
+	padding-top: 0;
+}
+.contact__info [class*="icon-"]{
+	font-size: 1.3em;
+	margin-right: 7px;
+	position: relative;
+	top: 5px;
+}
+.contact__info .social-icon__link{
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+.contact__info .social-icon__link [class*='icon-']{
+	background: black;
+	color: white;
+	margin-left: 0;
+	margin-right: 15px;
+    padding:4px;
+
+}
+.form {
+	padding: 10px;
+	margin-top: 20px;
+}
 /*Responsives */
 @media screen and (min-width:490px){
     .main-header img{
@@ -253,7 +336,10 @@ h1,h2,h3,h4,h5,h6 {
     .main-header__logo{
         font-size: 1.6em;
         padding: 8px;
-        
+    }
+    .main-nav{
+        border: 2px solid antiquewhite;
+        z-index: 4000;
     }
     .banner__aside{
         height: 500px;
@@ -315,6 +401,18 @@ h1,h2,h3,h4,h5,h6 {
     .group{
         margin-bottom: 30px;
         margin-top: 30px;
+    }
+    .form{
+        margin-top: 0;
+    }
+    .contact .container--flex{
+        align-items: flex-start;
+    }
+    .contact__info{
+        border-right: 2px solid antiquewhite;
+    }
+    .contact__info .column__text {
+        font-size: 0.95em;
     }
 
 }
@@ -389,7 +487,14 @@ h1,h2,h3,h4,h5,h6 {
         background-position: -80px -100px;
     }
     .column__text{
-        line-height: 22px;
+        line-height: 30px;
     }
-   
+}
+@media screen and (min-width:1024px){
+    .group{
+        width: 1000px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }

@@ -76,10 +76,11 @@ h1,h2,h3,h4,h5,h6 {
 .main-nav{
     width: 100%;
     position: sticky;
-    z-index: 2000px;
+    z-index: 2000;
     padding: 6px;
     top: 0;
     background: white;
+    border-bottom: 2px solid antiquewhite; 
 }
 #check{
     display: none;
@@ -276,16 +277,19 @@ h1,h2,h3,h4,h5,h6 {
         top: 16px;
         left: 0; 
 }
-.form .input-group input[type="text"]:focus + .label,
+/*.form .input-group input[type="text"]:focus + .label,
 .form .input-group input[type="email"]:focus + .label,
-.form .input-group textarea:focus + .label,
-.form .input-group input[type="text"]:valid + .label,
-.form .input-group input[type="email"]:valid + .label,  
-.form .input-group textarea:valid + .label{
+.form .input-group textarea:focus {
     top: -12px;
     font-size: 12px;
     line-height: 12px;
     color: #B6B6B6; 
+}*/
+.focus{
+    top: -12px !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    color: #B6B6B6 !important; 
 }
 .form input[type="submit"] {
     background: antiquewhite;
@@ -293,7 +297,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 2px solid black;
     color: black;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     padding: 15px;
     width: 100%;
@@ -321,11 +325,63 @@ h1,h2,h3,h4,h5,h6 {
 	margin-left: 0;
 	margin-right: 15px;
     padding:4px;
+    
 
 }
 .form {
 	padding: 10px;
 	margin-top: 20px;
+}
+.valido{
+    border-bottom: 2px solid green !important;
+}
+.invalido{
+    border-bottom:  2px solid red !important;
+    animation: shaking 500ms 1;
+    transition: all 1s;
+}
+.invalido-text{
+    color: red !important;
+}
+.text{
+    border-bottom: 2px solid #222 !important;
+}
+@keyframes shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 /*Responsives */
 @media screen and (min-width:490px){
@@ -336,10 +392,6 @@ h1,h2,h3,h4,h5,h6 {
     .main-header__logo{
         font-size: 1.6em;
         padding: 8px;
-    }
-    .main-nav{
-        border: 2px solid antiquewhite;
-        z-index: 4000;
     }
     .banner__aside{
         height: 500px;

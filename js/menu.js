@@ -16,7 +16,9 @@ class persona {
     }
 }
 let personasObjeto;
-fetch(URI)
+fetch(URI),{
+    mode: 'no-cors'
+}
     .then((datos) => datos.json())
     .then((datos) => {
         personasObjeto = datos.map(person => new persona(person.name,person.address.city,person.phone));

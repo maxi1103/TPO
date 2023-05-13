@@ -1,5 +1,6 @@
-[
-    {
+{
+    "posts": [
+      {
       "title": "Pizza Italiana",
       "description": "Elaborado con harina de trigo, levadura, agua y sal que tradicionalmente se cubre con salsa de tomate y mozzarella y se hornea a alta temperatura en un horno de leña.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/640px-Eq_it-na_pizza-margherita_sep2005_sml.jpg",
@@ -29,4 +30,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Lasagna.jpg/640px-Lasagna.jpg",
       "price": "$7.99"
     }
-  ]
+  ],
+  "profile":{
+    "name":"typicode"
+  }
+}

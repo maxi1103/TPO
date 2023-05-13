@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Pizza Italiana",
+      "description": "Elaborado con harina de trigo, levadura, agua y sal que tradicionalmente se cubre con salsa de tomate y mozzarella y se hornea a alta temperatura en un horno de leña.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/640px-Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+      "price": "$6.99"
+    },
+    {
+      "title": "Spaghetti con Salsa",
+      "description": "La pasta fresca se prepara con harina de grano duro y agua como ingredientes básicos para la masa. Junto con un agregado de salsa hacen de este plato una delicia.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Spaghetti_biz-Zalza_tal-Fenek.jpg/640px-Spaghetti_biz-Zalza_tal-Fenek.jpg",
+      "price": "$4.99"
+    },
+    {
+      "title": "Empanadas",
+      "description": "Recubiertas por una capa de masa prepada con harina, su interior varia de distntos ingredientes ensenciales entre ellos pollo, queso, carne",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Empanadas_salte%C3%B1as_1.jpg/640px-Empanadas_salte%C3%B1as_1.jpg",
+      "price": "$3.99"
+    },
+    {
+      "title": "Sopa de mani",
+      "description": "Una sopa que cuenta con mani molido o licuado, es una gran fuente alternativa de proteinas, cuenta con agregados que lo hacen un deleite tales como perejil, papas fritas",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sopa_de_Man%C3%AD_BetoComics.jpg/640px-Sopa_de_Man%C3%AD_BetoComics.jpg",
+      "price": "$9.99"
+    },
+    {
+      "title": "Lasagna",
+      "description": "La lasaña es un tipo de pasta. Se suele servir en láminas superpuestas intercaladas con capas de ingredientes al gusto, más frecuentemente carne en salsa boloñesa y bechamel.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Lasagna.jpg/640px-Lasagna.jpg",
+      "price": "$7.99"
+    }
+  ]

@@ -156,12 +156,14 @@ h1,h2,h3,h4,h5,h6 {
 .banner__btn{
     width: 80px;
     text-align: center;
-    text-decoration: none;
     background-color: #222;
-    color: white;
     padding: 10px;
     cursor: pointer;
     border: none;
+}
+.banner__btn a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer */
@@ -204,6 +206,11 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 20px;
     padding: 2px;
 }
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .offer .column{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -227,6 +234,23 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     color: rgb(136, 136, 39);
 }
+.offer__btn{
+    margin-top: 20px;
+    background: antiquewhite;
+    border-radius: 1px;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    display: block; 
+    padding: 20px;
+    width: 150px;
+}
+.offer__btn a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
 /* Sobre Nosotros */
 .about .column:nth-child(1){
 	height: 400px;
@@ -340,6 +364,11 @@ h1,h2,h3,h4,h5,h6 {
     animation: shaking 500ms 1;
     transition: all 1s;
 }
+.invalido-input{
+    border: 1px solid red;
+    animation: shaking 500ms 1;
+    transition: all 1s;
+}
 .invalido-text{
     color: red !important;
 }
@@ -348,7 +377,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /** Menuuuu **/
-
+.gmenu .container--flex{
+    align-items: start;
+}
 @keyframes shaking {
     0% {
         transform: translate(0, 0) rotate(0deg);
@@ -438,6 +469,11 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 1.2em;
     }
     .offer .column{
+        border: 3px solid #ddd;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .gmenu .column{
         border: 3px solid #ddd;
         padding: 5px;
         overflow: hidden;
@@ -552,4 +588,30 @@ h1,h2,h3,h4,h5,h6 {
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    .gmenu{
+        margin-top: 30px;
+    }
+}
+
+/* Buscador */
+.gmenu .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.gmenu .search input {
+    margin-right: 5px;
+    height: 30px;
+}
+.gmenu .search button{
+    background: antiquewhite;
+    border-radius: 1px;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    padding: 5px;
+
 }

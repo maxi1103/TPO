@@ -41,10 +41,9 @@ h1,h2,h3,h4,h5,h6 {
 .main-header img{
     width: 90px;
     height: 100px;
-    display: inline;
+    display: none;
 }
 .main-header__logo{
-    
     display: inline;
     font-size: 2em;
     padding: 12px;
@@ -147,7 +146,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 10px;
     font-size: 2em;
     font-weight: 100;
-    color: rgb(136, 136, 39);
+    color: rgb(94, 159, 138);
 }
 .banner__title2{
     font-weight: 100;
@@ -232,7 +231,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    color: rgb(136, 136, 39);
+    color: rgb(94, 159, 138);
 }
 .offer__btn{
     margin-top: 20px;
@@ -422,6 +421,7 @@ h1,h2,h3,h4,h5,h6 {
     .main-header img{
         width: 60px;
         height: 70px;
+        display: inline;
     }
     .main-header__logo{
         font-size: 1.6em;
